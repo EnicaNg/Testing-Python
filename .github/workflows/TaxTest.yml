@@ -1,4 +1,4 @@
-name: Python Tkinter Test
+name: TaxTest
 
 on:        # 這裡是必須的觸發事件
   push:
@@ -18,4 +18,4 @@ jobs:
           python-version: '3.11'
 
       - name: Run script
-        run: python your_script.py
+        run: python Tax3.py
