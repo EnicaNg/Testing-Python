@@ -5,6 +5,10 @@ on:        # 這裡是必須的觸發事件
     branches:
       - main
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +23,4 @@ jobs:
 
       - name: Run script
         run: python Tax3.py
-
-        env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
