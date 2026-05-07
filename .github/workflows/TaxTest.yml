@@ -1,13 +1,13 @@
 name: TaxTest
 
-on:        # 這裡是必須的觸發事件
+on:   # 必須要有觸發事件
   push:
     branches:
       - main
-
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
+  workflow_dispatch:   # 允許手動觸發
 
 jobs:
   build:
@@ -22,5 +22,6 @@ jobs:
           python-version: '3.12'
 
       - name: Run script
-        run: python Tax3.py
+        run: python3 Tax3.py
+
 
